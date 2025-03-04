@@ -71,8 +71,6 @@ app.post('/submit', async (req, res) => {
         newPost.title,
         newPost.content]);
 
-
-
     res.render('confirmation', { newPost });
 });
 
