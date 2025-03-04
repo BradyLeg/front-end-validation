@@ -20,7 +20,7 @@ document.getElementById('blog-form').onsubmit = () => {
 
     // Validate last name
     let content = document.getElementById('content').value.trim();
-    if (content === "" || content.lenght <= 10) {
+    if (content === "" || content.length < 10) {
         document.getElementById("err-content").style.display = "block";
         isValid = false;
     }
