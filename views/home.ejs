@@ -8,9 +8,15 @@
 <body>
     <form action="/submit" method="post" id="blog-form">
         <h1>Create a New Post</h1>
-        <input type="text" name="name">
-        <input type="text" name="title">
-        <input type="text" name="content">
+        <input type="text" name="name" id="name">
+        <span class="err" id="err-name">Name is required and can't contain numbers</span>
+
+        <input type="text" name="title" id="title">
+        <span class="err" id="err-title">Title is required</span>
+
+        <input type="text" name="content" id="content">
+        <span class="err" id="err-content">Content has to be at least 10 characters long</span>
+        
         <button type="submit">submit</button>
     </form>
 </body>
